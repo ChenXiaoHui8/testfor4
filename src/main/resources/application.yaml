@@ -1,0 +1,23 @@
+server:
+  port: 9090
+  jsp-servlet:
+    init-parameters:
+      development: true
+  context-path: testfor4
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: 
+
+
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+
+
+mybatis:
+  type-aliases-package: com.baizhi.entity
+  mapper-locations: com/baizhi/dao/*Dao.xml
+
+
