@@ -6,8 +6,10 @@ server:
   context-path: testfor4
 spring:
   datasource:
-    type: com.alibaba.druid.pool.DruidDataSource
-    url: 
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: 123456
+    driverClassName: com.mysql.jdbc.Driver
 
 
   mvc:
@@ -18,6 +20,6 @@ spring:
 
 mybatis:
   type-aliases-package: com.baizhi.entity
-  mapper-locations: com/baizhi/dao/*Dao.xml
+  mapper-locations: com/baizhi/dao/*Mapper.xml
 
 

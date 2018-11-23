@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baizhi.dao.UsersDao">
+    <select id="login" resultType="com.baizhi.entity.Users">
+		select * from auction_user where  username=#{username} and userpassword=#{password}
+	</select>
+    <insert id="regist">
+        insert into users values(#{id},#{username},#{password})
+    </insert>
+</mapper>
